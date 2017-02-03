@@ -4480,7 +4480,7 @@ declare namespace Cy {
         /**
          * A plain object that specifies layout options. Which layout is initially run is specified by the name field. Refer to a layout's documentation for the options it supports. If you want to specify your node positions yourself in your elements JSON, you can use the preset layout — by default it does not set any positions, leaving your nodes in their current positions (e.g. specified in options.elements at initialisation time)
          */
-        layout?: LayoutOptions;
+        layout?: NullLayoutOptions | LayoutOptions | PresetLayoutOptions | GridLayoutOptions | CircleLayoutOptions | ConcentricLayoutOptions | BreadthFirstLayoutOptions | CoseLayoutOptions;
         /**
          * A callback function that is called when Cytoscape.js has loaded the graph and the layout has specified initial positions of the nodes. After this point, rendering can happen, the user can interact with the graph, et cetera.
          */
