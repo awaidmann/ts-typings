@@ -2363,7 +2363,7 @@ declare namespace Cy {
      */
     interface Stylesheet {
         selector: string;
-        css: Css.Node | Css.Edge;
+        style: Css.Node | Css.Edge;
     }
 
     interface ElementStylesheet extends Stylesheet {
